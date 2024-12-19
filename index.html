@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="home-icon"></div>
+
+        <nav>
+            <a href="#home-section">Home</a>
+            <a href="#our-package-section">Our Packages</a>
+            <a href="#call-us-section">Call Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <header class="content-header">
+            <h1>Your Trusted Travel Agent's</h1>
+            <p>Your Happiness is Our Happiness</p>
+        </header>
+
+        <!-- Home Content -->
+        <section class="main-container" id="home-section">
+            <!-- Banner AutoSlide Content -->
+            <aside class="main-item">
+                <div class="banner-img banner-1"></div>
+                <div class="banner-img banner-2"></div>
+                <div class="banner-img banner-3"></div>
+
+                <div class="review">
+                    <p><i>"Liburan jadi menyenangkan bersama Travel Agentku"</i></p>
+
+
+                    <div class="review-header">
+                        <div class="review-image">
+                            <img src="../09-dec-24-Hanif128/assets/blank-profile-pictures.png" alt="Profile Picture">
+                        </div>
+                        <div class="review-info">
+                            <h5>Florence Hughes</h5>
+                            <p>Ibu Rumah Tangga, 28</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="review-description">
+                    <h5>
+                        Enjoy an unforgettable travel experience with our best travel services. We are here to ensure
+                        that every trip you make is comfortable, safe and full of beautiful memories. Main benefits of
+                        our service:
+                    </h5>
+                </div>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-number">1</div>
+                        <p>Professional Services</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">2</div>
+                        <p>Affordable Prices</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">3</div>
+                        <p>Variety of Destinations</p>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Form Contact Us -->
+            <form class="main-item">
+                <div class="form-container">
+                    <h3>Contact Us</h3>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami diterima.</p>
+                    <label for="username-input"><b>Your Name:</b></label><br>
+                    <input type="text" id="username-input" required placeholder="Full name" /><br>
+
+                    <label for="email-input"><b>Email Address:</b></label><br>
+                    <input type="email" id="email-input" required placeholder="Example@example.com"><br>
+
+                    <label for="interested-input"><b>What are you interested in?</b></label><br>
+                    <select name="interested-input" id="interested-input" required>
+                        <option value="" disabled selected>Select option</option>
+                        <option value="">Nature</option>
+                        <option value="">Modern</option>
+                        <option value="">Traditional/Culture</option>
+                        <option value="">Umrah</option>
+                        <option value="">Culinary</option>
+                        <option value="">History</option>
+                        <option value="">Science</option>
+                    </select><br>
+
+                    <button type="button" id="submit-btn" onclick="validateForm();">SEND</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Our Packages Content -->
+        <section id="our-package-section">
+            <header class="content-header our-packages-header">
+                <h1>Our Packages</h1>
+            </header>
+
+            <article class="packages-content">
+                <div class="packages-container">
+                    <div class="packages-item">
+                        <div class="packages-image">
+                            <img src="./assets/bulb.png" alt="">
+                        </div>
+                        <div class="packages-info">
+                            <h5>Bali</h5>
+                            <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-image">
+                            <img src="./assets/bulb.png" alt="">
+                        </div>
+                        <div class="packages-info">
+                            <h5>Japan</h5>
+                            <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-image">
+                            <img src="./assets/bulb.png" alt="">
+                        </div>
+                        <div class="packages-info">
+                            <h5>Singapore</h5>
+                            <p>Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages-container">
+                    <div class="packages-item">
+                        <div class="packages-image">
+                            <img src="./assets/bulb.png" alt="">
+                        </div>
+                        <div class="packages-info">
+                            <h5>Bandung</h5>
+                            <p>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-image">
+                            <img src="./assets/bulb.png" alt="">
+                        </div>
+                        <div class="packages-info">
+                            <h5>Surabaya</h5>
+                            <p>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-image">
+                            <img src="./assets/bulb.png" alt="">
+                        </div>
+                        <div class="packages-info">
+                            <h5>Samarinda</h5>
+                            <p>Travel dan wisata di Samarinda. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Call Us Content -->
+        <section id="callsection">
+            <header class="content-header our-packages-header">
+                <h1>Call Us</h1>
+            </header>
+
+            <article class="call-content">
+                <div class="call-container">
+                    <h1>Thank You For Visiting Us!</h1>
+                    <p>Connect with us! Click below!</p>
+                </div>
+                <div class="icon-connect">
+                    <a href="https://github.com/Hanif128" target="_blank">
+                        <img src="assets/github.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/m_hanifm/" target="_blank">
+                        <img src="assets/instagram.png" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <span>Made by @m_hanifm</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
